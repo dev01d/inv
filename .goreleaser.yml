@@ -1,0 +1,47 @@
+before:
+  hooks:
+    - go mod download
+builds:
+  - main:
+    binary: inv
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w -X main.version={{.Version}}
+archives:
+  - replacements:
+      amd64: x86_64
+checksum:
+  name_template: "checksums.txt"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^test:"
+      - "^Test:"
+      - "^ci:"
+      - "^CI:"
+brews:
+  - tap:
+      owner: dev01d
+      name: homebrew-tap
+    folder: Formula
+    homepage: https://github.com/dev01d/inv
+    description: A formatted investigation tool
+    skip_upload: auto
+    test: |
+      system "#{bin}/inv --version"
+nfpms:
+  - id: packages
+    file_name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+publishers:
+  - name: fury.io
+    ids:
+      - packages
+    dir: "{{ dir .ArtifactPath }}"
+    cmd: curl -F package=@{{ .ArtifactName }} https://{{ .Env.FURY_TOKEN }}@push.fury.io/dev01d/
