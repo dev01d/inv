@@ -16,16 +16,23 @@ builds:
 archives:
   - replacements:
       amd64: x86_64
+    format_overrides:
+      - goos: windows
+        format: zip
 checksum:
   name_template: "checksums.txt"
 changelog:
   sort: asc
   filters:
     exclude:
+      - "^docs:"
       - "^test:"
       - "^Test:"
       - "^ci:"
       - "^CI:"
+      - Merge pull request
+      - Merge branch
+      - go mod tidy
 brews:
   - tap:
       owner: dev01d
