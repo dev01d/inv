@@ -26,6 +26,7 @@ changelog:
   filters:
     exclude:
       - "^docs:"
+      - "^Docs:"
       - "^test:"
       - "^Test:"
       - "^ci:"
