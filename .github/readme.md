@@ -54,10 +54,6 @@ gpgcheck=0
 yum install inv
 ```
 
-### Go
-
-```shell
-go install github.com/dev01d/inv@latest
-```
+### Windows
 
 Download from [release page](https://github.com/dev01d/inv/releases)
