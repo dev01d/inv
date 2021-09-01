@@ -6,6 +6,10 @@ A formatted investigation tool.
 
 ## Usage
 
+<p align="center">
+    <img src="assets/demo.gif" width="80%" alt="inv command usage GIF" />
+</p>
+
 ```shell
 Usage: inv [OPTIONS] COMMAND
 
@@ -24,6 +28,30 @@ via Homebrew:
 
 ```shell
 brew install dev01d/tap/inv
+```
+
+## Linux
+
+- DEB
+
+```shell
+sudo echo "deb [trusted=yes] https://apt.fury.io/dev01d/ /" > /etc/apt/sources.list.d/fury.list
+
+sudo apt-get update; sudo apt install inv
+```
+
+- YUM
+
+```shell
+sudo echo """\
+[fury]
+name=Gemfury Private Repo
+baseurl=https://yum.fury.io/dev01d/
+enabled=1
+gpgcheck=0
+""" > /etc/yum.repos.d/fury.repo
+
+yum install inv
 ```
 
 ### Go
