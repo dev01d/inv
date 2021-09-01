@@ -7,7 +7,7 @@ A formatted investigation tool.
 ## Usage
 
 <p align="center">
-    <img src=".github/assets/demo.gif" max-width="100%" alt="inv command usage GIF" />
+    <img src="assets/demo.gif" width="80%" alt="inv command usage GIF" />
 </p>
 
 ```shell
