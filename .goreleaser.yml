@@ -38,6 +38,9 @@ brews:
       system "#{bin}/inv --version"
 nfpms:
   - id: packages
+    formats:
+      - deb
+      - rpm
     file_name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
 publishers:
   - name: fury.io
