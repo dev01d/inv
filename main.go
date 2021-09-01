@@ -15,11 +15,12 @@ var (
 	upVar    string
 	whoisVar string
 	version  string
+	banner   = "Usage: inv [OPTIONS] COMMAND\n"
 )
 
 func main() {
 	op := optionparser.NewOptionParser()
-	op.Banner = "Usage: inv [OPTIONS] COMMAND"
+	op.Banner = banner
 	op.On("-u", "--up IP", "Check liveness stats", &upVar)
 	op.On("-d", "--dig domain", "Dig DNS records", &digVar)
 	op.On("-w", "--whois domain", "Whois domain information", &whoisVar)
