@@ -1,4 +1,4 @@
-module github.com/dev01d/inv
+module inv
 
 go 1.17
 
