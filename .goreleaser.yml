@@ -46,6 +46,10 @@ brews:
       system "#{bin}/inv --version"
 nfpms:
   - id: packages
+    maintainer: Jason Behnke <jason@jasonbehnke.io>
+    homepage: https://github.com/dev01d/inv
+    description: A formatted investigation tool
+    license: MIT
     formats:
       - deb
       - rpm
