@@ -51,6 +51,7 @@ nfpms:
     description: A formatted investigation tool
     license: MIT
     formats:
+      - apk
       - deb
       - rpm
     file_name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
