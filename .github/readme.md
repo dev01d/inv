@@ -35,7 +35,8 @@ brew install dev01d/tap/inv
 - APT
 
 ```shell
-sudo echo "deb [trusted=yes] https://apt.fury.io/dev01d/ /" > /etc/apt/sources.list.d/fury.list
+echo "deb [trusted=yes] https://apt.fury.io/dev01d/ /" \
+    | sudo tee /etc/apt/sources.list.d/inv.list > /dev/null
 
 sudo apt-get update; sudo apt install inv
 ```
@@ -49,7 +50,7 @@ name=Gemfury Private Repo
 baseurl=https://yum.fury.io/dev01d/
 enabled=1
 gpgcheck=0
-""" > /etc/yum.repos.d/fury.repo
+""" > /etc/yum.repos.d/inv.repo
 
 yum install inv
 ```
