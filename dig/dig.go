@@ -3,6 +3,8 @@ package dig
 import (
 	"fmt"
 	"net"
+
+	"github.com/fatih/color"
 )
 
 var handleErr = "no record found\n"
@@ -15,7 +17,7 @@ func aRecord(digVar string) {
 	if len(names) == 0 {
 		fmt.Print(handleErr)
 	}
-	fmt.Printf("\n----  A RECORD(S)  ----\n")
+	color.Green("\n----  A RECORD(S)  ----\n")
 	for _, name := range names {
 		fmt.Printf(" %s\n", name)
 	}
@@ -29,7 +31,7 @@ func mxRecord(digVar string) {
 	if len(names) == 0 {
 		fmt.Print(handleErr)
 	}
-	fmt.Printf("\n----  MX RECORD(S)  ----\n")
+	color.Green("\n----  MX RECORD(S)  ----\n")
 	for _, name := range names {
 		fmt.Printf(" %s\n", name.Host)
 	}
@@ -43,7 +45,7 @@ func nsRecord(digVar string) {
 	if len(names) == 0 {
 		fmt.Print(handleErr)
 	}
-	fmt.Printf("\n----  NS RECORD(S)  ----\n")
+	color.Green("\n----  NS RECORD(S)  ----\n")
 	for _, name := range names {
 		fmt.Printf(" %s\n", name.Host)
 	}
@@ -57,7 +59,7 @@ func txtRecord(digVar string) {
 	if len(names) == 0 {
 		fmt.Print(handleErr)
 	}
-	fmt.Printf("\n---- TXT RECORD(S) ----\n")
+	color.Green("\n---- TXT RECORD(S) ----\n")
 	for _, name := range names {
 		fmt.Printf(" %s\n", name)
 	}

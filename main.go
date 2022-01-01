@@ -7,6 +7,7 @@ import (
 	"inv/whois"
 	"os"
 
+	"github.com/fatih/color"
 	"github.com/speedata/optionparser"
 )
 
@@ -28,7 +29,7 @@ func main() {
 
 	err := op.Parse()
 	if err != nil {
-		fmt.Printf("Unknown option: %s\n\n", os.Args[1])
+		color.Red("Unknown option: %s\n", os.Args[1])
 		op.Help()
 		os.Exit(0)
 	} else if len(os.Args) < 2 {
@@ -46,7 +47,7 @@ func main() {
 	case "--version":
 		fmt.Printf("Version: %s\n", version)
 	default:
-		fmt.Printf("Unknown command: %s\n", os.Args[1])
+		color.Red("Unknown command: %s\n", os.Args[1])
 		op.Help()
 		os.Exit(0)
 	}

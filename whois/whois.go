@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 
+	"github.com/fatih/color"
 	whois "github.com/likexian/whois"
 	whoisparser "github.com/likexian/whois-parser"
 )
@@ -16,10 +17,10 @@ func Whois(whoisVar string) {
 		data, err := whoisparser.Parse(result)
 		isAddr := net.ParseIP(whoisVar)
 		if isAddr != nil {
-			fmt.Println("Only domains please\n \bThat query returns:", data)
+			color.Red("Only domains please\n \bThat query returns:", data)
 		} else {
 			if err == nil {
-				fmt.Println("\n############ [WHOIS QUERY] #############")
+				color.Green("\n############ [WHOIS QUERY] #############")
 				fmt.Println("Domain Name:", data.Domain.Domain)
 				fmt.Println("Exp Date:", data.Domain.ExpirationDate)
 				fmt.Println("Updated:", data.Domain.UpdatedDate)
@@ -31,9 +32,9 @@ func Whois(whoisVar string) {
 				for i, ns := range nsArr {
 					fmt.Println("Name Server", i+1, "\b:", ns)
 				}
-				fmt.Printf("########################################\n\n")
+				color.Green("########################################\n\n")
 			} else {
-				fmt.Println("\nDoamin not found or not registered")
+				color.Yellow("Doamin not found or not registered")
 			}
 		}
 	}
