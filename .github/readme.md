@@ -32,7 +32,7 @@ brew install dev01d/tap/inv
 
 ## Linux
 
-- DEB
+- APT
 
 ```shell
 sudo echo "deb [trusted=yes] https://apt.fury.io/dev01d/ /" > /etc/apt/sources.list.d/fury.list
@@ -53,6 +53,10 @@ gpgcheck=0
 
 yum install inv
 ```
+
+### Alpine Linux
+
+Download from [release page](https://github.com/dev01d/inv/releases)
 
 ### Windows
 
