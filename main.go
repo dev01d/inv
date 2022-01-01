@@ -27,9 +27,8 @@ func main() {
 	op.On("--version", "Print version")
 
 	err := op.Parse()
-	command := os.Args[1]
 	if err != nil {
-		fmt.Printf("Unknown option: %s\n\n", command)
+		fmt.Printf("Unknown option: %s\n\n", os.Args[1])
 		op.Help()
 		os.Exit(0)
 	} else if len(os.Args) < 2 {
@@ -47,7 +46,7 @@ func main() {
 	case "--version":
 		fmt.Printf("Version: %s\n", version)
 	default:
-		fmt.Printf("Unknown command: %s\n", command)
+		fmt.Printf("Unknown command: %s\n", os.Args[1])
 		op.Help()
 		os.Exit(0)
 	}
