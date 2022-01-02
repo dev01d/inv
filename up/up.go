@@ -21,6 +21,7 @@ func pings(upVar string) {
 		os.Exit(0)
 	}
 	ping.Count = 4
+	ping.Timeout = 3 * time.Second
 	err = ping.Run()
 	if err != nil {
 		color.Red("Cannot resolve %s\n", upVar)
