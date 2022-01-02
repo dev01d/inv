@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"time"
 
 	"github.com/fatih/color"
 	"github.com/go-ping/ping"
@@ -17,17 +18,21 @@ func pings(upVar string) {
 	}
 	ping, err := ping.NewPinger(upVar)
 	if err != nil {
-		color.Red("Cannot resolve %s\n", upVar)
+		color.Red("Cannot ping host %s\n", upVar)
 		os.Exit(0)
 	}
 	ping.Count = 4
 	ping.Timeout = 3 * time.Second
 	err = ping.Run()
 	if err != nil {
-		color.Red("Cannot resolve %s\n", upVar)
+		color.Red("Cannot ping host %s\n", upVar)
 		os.Exit(0)
 	}
 	results := ping.Statistics()
+	if results.PacketLoss > 99 {
+		color.Red("Cannot ping host %s\n", upVar)
+		os.Exit(0)
+	}
 	color.Blue("\nResults of ping -c 4")
 	fmt.Printf("Host up on IP:\t\t%s\nAverage latency:\t%s\nAverage packet loss:\t%.2f\n\n",
 		results.IPAddr, results.AvgRtt, results.PacketLoss)
