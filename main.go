@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"inv/dig"
-	"inv/up"
-	"inv/whois"
+	"inv/src/dig"
+	"inv/src/up"
+	"inv/src/whois"
 	"os"
 
 	"github.com/fatih/color"
