@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: gomod
+    directory: "/"
+    schedule:
+      interval: weekly
+      time: "17:30"
+      timezone: America/Los_Angeles
+    open-pull-requests-limit: 10
+    assignees:
+      - dev01d
