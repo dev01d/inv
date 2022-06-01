@@ -19,7 +19,7 @@ func aRecord(digVar string) {
 	}
 	color.Green("\n----  A RECORD(S)  ----\n")
 	for _, name := range names {
-		fmt.Printf(" %s\n", name)
+		fmt.Printf("%s\n", name)
 	}
 }
 
@@ -33,7 +33,7 @@ func mxRecord(digVar string) {
 	}
 	color.Green("\n----  MX RECORD(S)  ----\n")
 	for _, name := range names {
-		fmt.Printf(" %s\n", name.Host)
+		fmt.Printf("%s\n", name.Host)
 	}
 }
 
@@ -47,7 +47,7 @@ func nsRecord(digVar string) {
 	}
 	color.Green("\n----  NS RECORD(S)  ----\n")
 	for _, name := range names {
-		fmt.Printf(" %s\n", name.Host)
+		fmt.Printf("%s\n", name.Host)
 	}
 }
 
@@ -61,7 +61,7 @@ func txtRecord(digVar string) {
 	}
 	color.Green("\n---- TXT RECORD(S) ----\n")
 	for _, name := range names {
-		fmt.Printf(" %s\n", name)
+		fmt.Printf("%s\n", name)
 	}
 	fmt.Printf("\n")
 }
