@@ -6,9 +6,9 @@ require (
 	github.com/go-ping/ping v1.1.0
 	github.com/likexian/gokit v0.25.8 // indirect
 	github.com/likexian/whois v1.12.5
-	github.com/likexian/whois-parser v1.23.1
+	github.com/likexian/whois-parser v1.24.0
 	github.com/speedata/optionparser v1.0.1
-	golang.org/x/net v0.0.0-20220531201128-c960675eff93 // indirect
+	golang.org/x/net v0.0.0-20220630215102-69896b714898 // indirect
 	golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a // indirect
 )
 
