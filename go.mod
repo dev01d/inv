@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/go-ping/ping v1.1.0
 	github.com/likexian/gokit v0.25.8 // indirect
-	github.com/likexian/whois v1.12.5
+	github.com/likexian/whois v1.14.2
 	github.com/likexian/whois-parser v1.24.0
 	github.com/speedata/optionparser v1.0.1
 	golang.org/x/net v0.0.0-20220630215102-69896b714898 // indirect
