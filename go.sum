@@ -9,8 +9,8 @@ github.com/likexian/gokit v0.25.8 h1:YL5yxnUxVMmJ5PRrMw3Dgr9gNidjXitdPs0/69T4PX0
 github.com/likexian/gokit v0.25.8/go.mod h1:oDDqJUcnnF9uAKuw54F7s6oEG+OJ7eallfDW2dq0A/o=
 github.com/likexian/whois v1.12.5 h1:8T0M13RUIx3nYVrn4lnInUfFs2/BUvmQShHgarDF4O0=
 github.com/likexian/whois v1.12.5/go.mod h1:SfdfmB72mSdrC/8eLjYkeaEJp9t1MPAgp0ebCzZfYXw=
-github.com/likexian/whois-parser v1.23.1 h1:q9W1rMhLIOHc/Jd8XL6bZowwqzbXSyBmtf/IO6IRywI=
-github.com/likexian/whois-parser v1.23.1/go.mod h1:umJD+xOa1wehGIjKBlRq3vCpgpQyzW5bCCk5r2zuerI=
+github.com/likexian/whois-parser v1.24.0 h1:jfC//AgBQvUaaxGPiG3Xo7p/yOEALAYxrQgxLcLFXXk=
+github.com/likexian/whois-parser v1.24.0/go.mod h1:mDyeVdEg60cNU6VhXWjyvPc6oTHkigaNWIWZCiQ7kQk=
 github.com/mattn/go-colorable v0.1.9/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
 github.com/mattn/go-colorable v0.1.12 h1:jF+Du6AlPIjs2BiUiQlKOX0rt3SujHxPnksPKZbaA40=
 github.com/mattn/go-colorable v0.1.12/go.mod h1:u5H1YNBxpqRaxsYJYSkiCWKzEfiAb1Gb520KVy5xxl4=
@@ -20,8 +20,8 @@ github.com/mattn/go-isatty v0.0.14/go.mod h1:7GGIvUiUoEMVVmxf/4nioHXj79iQHKdU27k
 github.com/speedata/optionparser v1.0.1 h1:sWevh2SwW2FnLI3S/LNKQBTaArQi+jhi+tPmuoxm2mY=
 github.com/speedata/optionparser v1.0.1/go.mod h1:JzOMd1kGlM5gtPBy7reOayfHsTXCvd6P4JU8BW0LicE=
 golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4/go.mod h1:RBQZq4jEuRlivfhVLdyRGr576XBO4/greRjx4P4O3yc=
-golang.org/x/net v0.0.0-20220531201128-c960675eff93 h1:MYimHLfoXEpOhqd/zgoA/uoXzHB86AEky4LAx5ij9xA=
-golang.org/x/net v0.0.0-20220531201128-c960675eff93/go.mod h1:XRhObCWvk6IyKnWLug+ECip1KBveYUHfp+8e9klMJ9c=
+golang.org/x/net v0.0.0-20220630215102-69896b714898 h1:K7wO6V1IrczY9QOQ2WkVpw4JQSwCd52UsxVEirZUfiw=
+golang.org/x/net v0.0.0-20220630215102-69896b714898/go.mod h1:XRhObCWvk6IyKnWLug+ECip1KBveYUHfp+8e9klMJ9c=
 golang.org/x/sync v0.0.0-20210220032951-036812b2e83c/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20220513210516-0976fa681c29 h1:w8s32wxx3sY+OjLlv9qltkLU5yvJzxjjgiHWLjdIcw4=
 golang.org/x/sync v0.0.0-20220513210516-0976fa681c29/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
