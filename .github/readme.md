@@ -34,6 +34,8 @@ brew install dev01d/tap/inv
 
 - APT
 
+<!-- /* spellchecker: disable */ -->
+
 ```shell
 curl -fsSL https://apt.fury.io/dev01d/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dev01d.gpg
 
@@ -57,6 +59,8 @@ gpgcheck=0
 
 yum install inv
 ```
+
+<!-- /* spellchecker: enable */ -->
 
 ### Alpine Linux
 
