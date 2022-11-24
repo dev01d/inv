@@ -1,4 +1,4 @@
-package up
+package ping
 
 import (
 	"fmt"
@@ -10,27 +10,27 @@ import (
 	"github.com/go-ping/ping"
 )
 
-func pings(upVar string) {
-	validateIP := net.ParseIP(upVar)
+func pings(pingVar string) {
+	validateIP := net.ParseIP(pingVar)
 	if validateIP == nil {
-		color.Red("%s is not a valid IP Address\n", upVar)
+		color.Red("%s is not a valid IP Address\n", pingVar)
 		os.Exit(0)
 	}
-	ping, err := ping.NewPinger(upVar)
+	ping, err := ping.NewPinger(pingVar)
 	if err != nil {
-		color.Red("Cannot ping host %s\n", upVar)
+		color.Red("Cannot ping host %s\n", pingVar)
 		os.Exit(0)
 	}
 	ping.Count = 4
 	ping.Timeout = 3 * time.Second
 	err = ping.Run()
 	if err != nil {
-		color.Red("Cannot ping host %s\n", upVar)
+		color.Red("Cannot ping host %s\n", pingVar)
 		os.Exit(0)
 	}
 	results := ping.Statistics()
 	if results.PacketLoss > 99 {
-		color.Red("Cannot ping host %s\n", upVar)
+		color.Red("Cannot ping host %s\n", pingVar)
 		os.Exit(0)
 	}
 	color.Blue("\nResults of ping -c 4")
@@ -38,6 +38,6 @@ func pings(upVar string) {
 		results.IPAddr, results.AvgRtt, results.PacketLoss)
 }
 
-func Up(upVar string) {
-	pings(upVar)
+func Ping(pingVar string) {
+	pings(pingVar)
 }

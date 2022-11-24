@@ -15,7 +15,7 @@ import (
 var (
 	digVar   string
 	nmapVar  string
-	upVar    string
+	pingVar  string
 	whoisVar string
 	version  string
 	banner   = "Usage: inv [OPTIONS] COMMAND\n"
@@ -24,9 +24,9 @@ var (
 func main() {
 	op := optionparser.NewOptionParser()
 	op.Banner = banner
-	op.On("-u", "--up IP", "Check liveness stats", &upVar)
 	op.On("-d", "--dig domain", "Dig DNS records", &digVar)
 	op.On("-n", "--nmap target", "Nmap port scan", &nmapVar)
+	op.On("-p", "--ping IP", "Check liveness stats", &pingVar)
 	op.On("-w", "--whois domain", "Whois domain information", &whoisVar)
 	op.On("--version", "Print version")
 
@@ -45,10 +45,10 @@ func main() {
 		dig.Dig(digVar)
 	case "-n", "-nmap", "--namap":
 		nmap.Nmap(nmapVar)
+	case "-p", "-ping", "--ping":
+		ping.Ping(pingVar)
 	case "-w", "-whois", "--whois":
 		whois.Whois(whoisVar)
-	case "-u", "-up", "--up":
-		up.Up(upVar)
 	case "--version":
 		fmt.Printf("Version: %s\n", version)
 	default:
