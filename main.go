@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"inv/cmd/dig"
-	"inv/cmd/up"
+	"inv/cmd/nmap"
+	"inv/cmd/ping"
 	"inv/cmd/whois"
 	"os"
 
@@ -13,6 +14,7 @@ import (
 
 var (
 	digVar   string
+	nmapVar  string
 	upVar    string
 	whoisVar string
 	version  string
@@ -24,6 +26,7 @@ func main() {
 	op.Banner = banner
 	op.On("-u", "--up IP", "Check liveness stats", &upVar)
 	op.On("-d", "--dig domain", "Dig DNS records", &digVar)
+	op.On("-n", "--nmap target", "Nmap port scan", &nmapVar)
 	op.On("-w", "--whois domain", "Whois domain information", &whoisVar)
 	op.On("--version", "Print version")
 
@@ -40,6 +43,8 @@ func main() {
 	switch os.Args[1] {
 	case "-d", "-dig", "--dig":
 		dig.Dig(digVar)
+	case "-n", "-nmap", "--namap":
+		nmap.Nmap(nmapVar)
 	case "-w", "-whois", "--whois":
 		whois.Whois(whoisVar)
 	case "-u", "-up", "--up":
