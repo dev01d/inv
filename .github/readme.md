@@ -14,8 +14,9 @@ A formatted investigation tool.
 Usage: inv [OPTIONS] COMMAND
 
 -h, --help                   Show this help
--u, --up=IP                  Check liveness stats
 -d, --dig=domain             Dig DNS records
+-n, --nmap=target            Nmap port scan
+-p, --ping=IP                Check liveness stats
 -w, --whois=domain           Whois domain information
     --version                Print version
 ```
