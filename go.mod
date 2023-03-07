@@ -7,13 +7,13 @@ require (
 	github.com/fatih/color v1.14.1
 	github.com/go-ping/ping v1.1.0
 	github.com/likexian/whois v1.14.4
-	github.com/likexian/whois-parser v1.24.2
+	github.com/likexian/whois-parser v1.24.4
 	github.com/speedata/optionparser v1.0.1
 )
 
 require (
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/likexian/gokit v0.25.9 // indirect
+	github.com/likexian/gokit v0.25.10 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
