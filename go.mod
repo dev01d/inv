@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/Ullaakut/nmap/v2 v2.2.2
-	github.com/fatih/color v1.14.1
+	github.com/fatih/color v1.15.0
 	github.com/go-ping/ping v1.1.0
 	github.com/likexian/whois v1.14.5
 	github.com/likexian/whois-parser v1.24.5
