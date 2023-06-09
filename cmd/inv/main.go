@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"inv/cmd/dig"
-	"inv/cmd/nmap"
-	"inv/cmd/ping"
-	"inv/cmd/whois"
+	"inv/pkg/dig"
+	"inv/pkg/nmap"
+	"inv/pkg/ping"
+	"inv/pkg/whois"
 	"os"
 
 	"github.com/fatih/color"
