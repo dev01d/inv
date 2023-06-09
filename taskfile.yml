@@ -1,0 +1,18 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: run
+
+  run:
+    cmds:
+      - go run cmd/inv/main.go
+
+  build:
+    cmds:
+      - go build ./cmd/inv
+
+  test:
+    cmds:
+      - go run cmd/inv/main.go -d google.com
