@@ -7,7 +7,7 @@ require (
 	github.com/fatih/color v1.16.0
 	github.com/go-ping/ping v1.1.0
 	github.com/likexian/whois v1.15.1
-	github.com/likexian/whois-parser v1.24.9
+	github.com/likexian/whois-parser v1.24.10
 	github.com/speedata/optionparser v1.0.2
 )
 
