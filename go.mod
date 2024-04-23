@@ -2,8 +2,6 @@ module inv
 
 go 1.21
 
-toolchain go1.22.2
-
 require (
 	github.com/Ullaakut/nmap/v2 v2.2.2
 	github.com/fatih/color v1.16.0
