@@ -38,10 +38,10 @@ changelog:
       - Merge branch
       - go mod tidy
 brews:
-  - tap:
+  - repository:
       owner: dev01d
       name: homebrew-tap
-    folder: Formula
+    directory: Formula
     homepage: https://github.com/dev01d/inv
     description: A formatted investigation tool
     skip_upload: auto
