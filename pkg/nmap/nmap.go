@@ -33,7 +33,7 @@ func Nmap(nmapVar string) {
 		}
 
 		fmt.Printf("Host")
-		color.Blue(" %q", host.Addresses[0])
+		color.Cyan(" %q", host.Addresses[0])
 
 		for _, port := range host.Ports {
 			fmt.Printf("\tPort %d/%s %s %s\n", port.ID, port.Protocol, port.State, port.Service.Name)

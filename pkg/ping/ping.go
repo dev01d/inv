@@ -33,7 +33,7 @@ func pings(pingVar string) {
 		color.Red("Cannot ping host %s\n", pingVar)
 		os.Exit(0)
 	}
-	color.Blue("\nResults of ping -c 4")
+	color.Cyan("\nResults of ping -c 4")
 	fmt.Printf("Host up on IP:\t\t%s\nAverage latency:\t%s\nAverage packet loss:\t%.2f\n\n",
 		results.IPAddr, results.AvgRtt, results.PacketLoss)
 }
