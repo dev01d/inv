@@ -34,7 +34,7 @@ func Whois(whoisVar string) {
 				}
 				color.Green("########################################\n\n")
 			} else {
-				color.Yellow("Doamin not found or not registered")
+				color.Yellow("Domain not found or not registered")
 			}
 		}
 	}
