@@ -41,6 +41,7 @@ brews:
   - repository:
       owner: dev01d
       name: homebrew-tap
+      token: "{{ .Env.TAP_GITHUB_TOKEN }}"
     directory: Formula
     homepage: https://github.com/dev01d/inv
     description: A formatted investigation tool
