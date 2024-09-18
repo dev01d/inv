@@ -38,12 +38,12 @@ brew install dev01d/tap/inv
 <!-- /* spellchecker: disable */ -->
 
 ```shell
-curl -fsSL https://apt.fury.io/dev01d/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dev01d.gpg
+curl -fsSL https://dev01d.fury.site/apt/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dev01d.gpg
 ```
 ``` bash
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/dev01d.gpg] \
- https://apt.fury.io/dev01d/ * *" \
-| sudo tee -a /etc/apt/sources.list.d/inv.list > /dev/null
+ https://dev01d.fury.site/apt/ * *" \
+| sudo tee -a /etc/apt/sources.list.d/dev01d.list > /dev/null
 ```
 ```bash
 sudo apt-get update; sudo apt install inv
@@ -53,12 +53,12 @@ sudo apt-get update; sudo apt install inv
 
 ```shell
 sudo echo """\
-[fury]
-name=Gemfury Private Repo
-baseurl=https://yum.fury.io/dev01d/
+[dev01d]
+name=dev01d repo
+baseurl=https://dev01d.fury.site/yum/
 enabled=1
 gpgcheck=0
-""" > /etc/yum.repos.d/inv.repo
+""" > /etc/yum.repos.d/dev01d.repo
 
 yum install inv
 ```
