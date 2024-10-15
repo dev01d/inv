@@ -37,21 +37,23 @@ brew install dev01d/tap/inv
 
 <!-- /* spellchecker: disable */ -->
 
-```shell
+```bash
 curl -fsSL https://dev01d.fury.site/apt/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dev01d.gpg
 ```
-``` bash
+
+```bash
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/dev01d.gpg] \
  https://dev01d.fury.site/apt/ * *" \
 | sudo tee -a /etc/apt/sources.list.d/dev01d.list > /dev/null
 ```
+
 ```bash
 sudo apt-get update; sudo apt install inv
 ```
 
 - YUM
 
-```shell
+```bash
 sudo echo """\
 [dev01d]
 name=dev01d repo
