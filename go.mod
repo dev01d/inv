@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/Ullaakut/nmap/v2 v2.2.2
-	github.com/fatih/color v1.17.0
+	github.com/fatih/color v1.18.0
 	github.com/go-ping/ping v1.1.0
 	github.com/likexian/whois v1.15.5
 	github.com/likexian/whois-parser v1.24.20
@@ -19,6 +19,6 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	golang.org/x/net v0.28.0 // indirect
 	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.23.0 // indirect
+	golang.org/x/sys v0.25.0 // indirect
 	golang.org/x/text v0.17.0 // indirect
 )
