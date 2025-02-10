@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/Ullaakut/nmap/v2 v2.2.2
 	github.com/fatih/color v1.18.0
-	github.com/go-ping/ping v1.1.0
+	github.com/go-ping/ping v1.2.0
 	github.com/likexian/whois v1.15.5
 	github.com/likexian/whois-parser v1.24.20
 	github.com/speedata/optionparser v1.0.5
