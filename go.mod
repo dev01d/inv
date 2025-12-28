@@ -1,6 +1,7 @@
 module inv
 
-go 1.21
+go 1.23.0
+
 toolchain go1.24.1
 
 require (
@@ -9,7 +10,7 @@ require (
 	github.com/go-ping/ping v1.1.0
 	github.com/likexian/whois v1.15.6
 	github.com/likexian/whois-parser v1.24.20
-	github.com/speedata/optionparser v1.0.5
+	github.com/speedata/optionparser v1.1.1
 )
 
 require (
