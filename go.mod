@@ -8,7 +8,7 @@ require (
 	github.com/go-ping/ping v1.2.0
 	github.com/likexian/whois v1.15.7
 	github.com/likexian/whois-parser v1.24.21
-	github.com/speedata/optionparser v1.1.1
+	github.com/speedata/optionparser v1.2.1
 )
 
 require (
